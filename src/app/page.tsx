@@ -48,7 +48,12 @@ export default function Home() {
   }, [router]);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <div className="min-h-screen flex items-center justify-center bg-[#121212]">
+    <p className="text-[#00FFFF] text-xl sm:text-2xl font-bold text-center animate-pulse">
+      Loading...
+    </p>
+  </div>
+  
   }
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#121212]">
