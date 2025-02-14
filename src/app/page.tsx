@@ -51,6 +51,12 @@ export default function Home() {
     return <p>Loading...</p>;
   }
   return (
-    <>{user ? "Redirecting to dashboard..." : "Redirecting to Login..."}</>
+    <div className="min-h-screen flex items-center justify-center bg-[#121212]">
+    <p className="text-[#00FFFF] text-xl sm:text-2xl font-bold text-center animate-pulse">
+      {user ? "Redirecting to dashboard..." : "Redirecting to Login..."}
+    </p>
+  </div>
+  
+  
   );
 }
